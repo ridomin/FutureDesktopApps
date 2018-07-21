@@ -6,6 +6,6 @@
     xmlns:local="clr-namespace:WPF_Library"
     mc:Ignorable="d" d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-
+        <TextBlock Text="I'm a text block edited" FontSize="40" HorizontalAlignment="Left"/>
     </Grid>
 </UserControl>
