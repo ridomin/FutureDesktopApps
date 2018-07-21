@@ -1,0 +1,18 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net45</TargetFramework>
+    <ExtrasEnableWinFormsProjectSetup>true</ExtrasEnableWinFormsProjectSetup>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>WinFormsApp</AssemblyName>
+    <AssemblyTitle>Windows Forms Application</AssemblyTitle>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WinForms-Library\WinForms-Library.csproj" />
+  </ItemGroup>
+
+</Project>
