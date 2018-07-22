@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_Application
+namespace WpfApp1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,14 +25,9 @@ namespace WPF_Application
             InitializeComponent();
         }
 
-        public void Button1_Click(object sender, EventArgs eargs)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MyTextBox.Text = WrapperForWinRT.WrapperOne.IsDesignModeEnabled.ToString();
-        }
-
-        private void MyTextBox_DragLeave(object sender, DragEventArgs e)
-        {
-
+            MyTextBox.Text = WrapperForWinRT.WrapperOne.SaySomething();
         }
     }
 }

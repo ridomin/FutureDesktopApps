@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net45</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <ExtrasEnableWpfProjectSetup>true</ExtrasEnableWpfProjectSetup>
   </PropertyGroup>
 
@@ -11,8 +11,15 @@
     <AssemblyTitle>Windows Presentation Foundation Application</AssemblyTitle>
   </PropertyGroup>
 
+  <ItemGroup>    
+    <ProjectReference Include="..\WPF-Library\WPF-Library.csproj" />    
+    <ProjectReference Include="..\WrapperForWinRT\WrapperForWinRT.csproj" />
+  </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\WPF-Library\WPF-Library.csproj" />
+    <Reference Include="System.Runtime">
+      <Private>true</Private>
+    </Reference>
   </ItemGroup>
 
 </Project>
